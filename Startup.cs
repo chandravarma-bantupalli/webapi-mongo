@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Swashbuckle.AspNetCore.Swagger;
+using Swashbuckle.AspNetCore.SwaggerUI;
 
 namespace DemoAPI
 {
@@ -41,7 +43,13 @@ namespace DemoAPI
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseDefaultFiles();
+            
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/user.json", "Swagger Documentation for Demo Web APi with User Model");
+            });
             app.UseMvc();
         }
     }
