@@ -7,7 +7,6 @@ namespace DemoAPI.Models
   public class User
   {
     [BsonId]
-    [BsonRepresentation(BsonType.ObjectId)]
     public string userId { get; set; }
     public string userName { get; set; }
     public string userCity { get; set; }

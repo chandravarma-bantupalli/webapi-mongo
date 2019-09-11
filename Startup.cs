@@ -12,6 +12,10 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerUI;
+using MongoDB.Bson;
+using MongoDB.Driver;
+using DemoAPI.DataAccessLayer;
+using DemoAPI.BusinessLayer;
 
 namespace DemoAPI
 {
@@ -28,6 +32,9 @@ namespace DemoAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddScoped<UserDBContext>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserService, UserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,7 +53,7 @@ namespace DemoAPI
             //app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseDefaultFiles();
-            
+
             app.UseSwaggerUI(c => {
                 c.SwaggerEndpoint("/user.json", "Swagger Documentation for Demo Web APi with User Model");
             });
