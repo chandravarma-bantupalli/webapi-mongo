@@ -47,6 +47,7 @@ namespace DemoAPI.Controllers
     [HttpPost]
     public IActionResult PostUser([FromBody] User u)
     {
+      
       try
       {
         service.addUser(u);
@@ -62,7 +63,7 @@ namespace DemoAPI.Controllers
       }
     }
     [HttpPut]
-    [Route("{userId}/update")]
+    [Route("{userId}")]
     public IActionResult PutUser(string userId, [FromBody] User u)
     {
       try
@@ -79,7 +80,7 @@ namespace DemoAPI.Controllers
       }
     }
     [HttpDelete]
-    [Route("{userId}/delete")]
+    [Route("{userId}")]
     public IActionResult DeleteUser(string userId)
     {
       try
