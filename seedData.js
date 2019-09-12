@@ -3,167 +3,150 @@ db = conn.getDB("UsersDatabase");
 
 const users = [
   {
-    "userName": "Shannon Franks",
-    "userCity": "Rivereno",
-    "userEmail": "shannonfranks@parleynet.com",
-    "userPhone": "+91 (952) 406-2819",
-    "friends": [
+    "userId": "5d7a94bd7d211415b78b49fb",
+    "userName": "Graves Cooper",
+    "userCity": "Westboro",
+    "userEmail": "gravescooper@parleynet.com",
+    "userPhone": "+91 (996) 481-2249",
+    "userFriends": [
       {
-        "name": "Potter Blevins"
+        "friendId": "5d7a94bd16330e94b36fa834",
+        "friendName": "Byrd Eaton"
       },
       {
-        "name": "Massey Collins"
+        "friendId": "5d7a94bddd204c559879041d",
+        "friendName": "Roslyn Mack"
       },
       {
-        "name": "Tisha James"
+        "friendId": "5d7a94bd711e6ba7a6225637",
+        "friendName": "Crane Caldwell"
       },
       {
-        "name": "Jennifer Mcintyre"
+        "friendId": "5d7a94bded809d1f6eb14e6e",
+        "friendName": "Cooper Thompson"
       },
       {
-        "name": "William Tucker"
+        "friendId": "5d7a94bde214d817b5053b9e",
+        "friendName": "Flossie Mcconnell"
       }
     ]
   },
   {
-    "userName": "Lucia Padilla",
-    "userCity": "Norvelt",
-    "userEmail": "luciapadilla@parleynet.com",
-    "userPhone": "+91 (863) 538-2789",
-    "friends": [
+    "userId": "5d7a94bdb68ab2c3cc5efbc7",
+    "userName": "Paulette Hines",
+    "userCity": "Haring",
+    "userEmail": "paulettehines@parleynet.com",
+    "userPhone": "+91 (957) 494-2561",
+    "userFriends": [
       {
-        "name": "Emily Duncan"
+        "friendId": "5d7a94bd634483759ec6168b",
+        "friendName": "Belinda Norris"
       },
       {
-        "name": "Washington Guerra"
+        "friendId": "5d7a94bd351a9cf207cdc3a5",
+        "friendName": "Le Kirk"
       },
       {
-        "name": "Fernandez Maynard"
+        "friendId": "5d7a94bdcd804460f702221f",
+        "friendName": "Little Waller"
       },
       {
-        "name": "Bernadette Knight"
+        "friendId": "5d7a94bdb81b076d4315a108",
+        "friendName": "Ayala Burnett"
       },
       {
-        "name": "Magdalena Boyer"
+        "friendId": "5d7a94bd99ebc7cc255f20e5",
+        "friendName": "Tommie Ballard"
       }
     ]
   },
   {
-    "userName": "Gallagher Suarez",
-    "userCity": "Welch",
-    "userEmail": "gallaghersuarez@parleynet.com",
-    "userPhone": "+91 (929) 525-2890",
-    "friends": [
+    "userId": "5d7a94bd2a556b2808458e97",
+    "userName": "Hess Farrell",
+    "userCity": "Masthope",
+    "userEmail": "hessfarrell@parleynet.com",
+    "userPhone": "+91 (832) 573-2529",
+    "userFriends": [
       {
-        "name": "Hardin Martinez"
+        "friendId": "5d7a94bd0b5ef582df717ebb",
+        "friendName": "Sonia Bailey"
       },
       {
-        "name": "Frederick Daugherty"
+        "friendId": "5d7a94bdfad5abbafb26f321",
+        "friendName": "Barr Hardin"
       },
       {
-        "name": "Colleen Alford"
+        "friendId": "5d7a94bd458ebe2928421c38",
+        "friendName": "Tamera Good"
       },
       {
-        "name": "Keri Franklin"
+        "friendId": "5d7a94bda782e9fe408032e9",
+        "friendName": "Taylor Palmer"
       },
       {
-        "name": "Haney Zimmerman"
+        "friendId": "5d7a94bd6158e55737d5c6b6",
+        "friendName": "Kathie Nixon"
       }
     ]
   },
   {
-    "userName": "Nolan Lowe",
-    "userCity": "Brambleton",
-    "userEmail": "nolanlowe@parleynet.com",
-    "userPhone": "+91 (978) 418-3778",
-    "friends": [
+    "userId": "5d7a94bdc890b34b4c41d931",
+    "userName": "Zimmerman Ryan",
+    "userCity": "Boykin",
+    "userEmail": "zimmermanryan@parleynet.com",
+    "userPhone": "+91 (953) 503-2409",
+    "userFriends": [
       {
-        "name": "Estella Warren"
+        "friendId": "5d7a94bdff867f51d92967b4",
+        "friendName": "Cynthia Robbins"
       },
       {
-        "name": "Ora Raymond"
+        "friendId": "5d7a94bd3f64bdbc0e49bdf8",
+        "friendName": "Pollard Oliver"
       },
       {
-        "name": "Merritt Tyler"
+        "friendId": "5d7a94bdc525297b2b77e46f",
+        "friendName": "Hubbard Ochoa"
       },
       {
-        "name": "Cortez Rogers"
+        "friendId": "5d7a94bd744bb03faf14f919",
+        "friendName": "Alyce Mays"
       },
       {
-        "name": "Justice Walter"
+        "friendId": "5d7a94bd10d7d2f2de09d5b8",
+        "friendName": "Kristi Burton"
       }
     ]
   },
   {
-    "userName": "Hutchinson Rice",
-    "userCity": "Wyano",
-    "userEmail": "hutchinsonrice@parleynet.com",
-    "userPhone": "+91 (888) 550-3083",
-    "friends": [
+    "userId": "5d7a94bd31dabeccde32cfe9",
+    "userName": "Rosemary Downs",
+    "userCity": "Wedgewood",
+    "userEmail": "rosemarydowns@parleynet.com",
+    "userPhone": "+91 (993) 536-3739",
+    "userFriends": [
       {
-        "name": "Charlotte Aguilar"
+        "friendId": "5d7a94bde8c490833708bfd4",
+        "friendName": "Hines Dillon"
       },
       {
-        "name": "Jeanie Silva"
+        "friendId": "5d7a94bd0791e34ded0edc8b",
+        "friendName": "Teresa Garcia"
       },
       {
-        "name": "Flora Klein"
+        "friendId": "5d7a94bd7ea90b70da031016",
+        "friendName": "Jannie Wiley"
       },
       {
-        "name": "Jeanette Rich"
+        "friendId": "5d7a94bda36e29b7614e2bd0",
+        "friendName": "Bernard Bell"
       },
       {
-        "name": "Maria Hendricks"
-      }
-    ]
-  },
-  {
-    "userName": "Hinton Odonnell",
-    "userCity": "Saticoy",
-    "userEmail": "hintonodonnell@parleynet.com",
-    "userPhone": "+91 (951) 484-2305",
-    "friends": [
-      {
-        "name": "Newman Mccarty"
-      },
-      {
-        "name": "Kinney Livingston"
-      },
-      {
-        "name": "Beck Puckett"
-      },
-      {
-        "name": "Amie Wagner"
-      },
-      {
-        "name": "Felecia Dunn"
-      }
-    ]
-  },
-  {
-    "userName": "Rosa Gibson",
-    "userCity": "Maxville",
-    "userEmail": "rosagibson@parleynet.com",
-    "userPhone": "+91 (896) 434-2778",
-    "friends": [
-      {
-        "name": "Doreen Heath"
-      },
-      {
-        "name": "Abby Yang"
-      },
-      {
-        "name": "Josefa Munoz"
-      },
-      {
-        "name": "Ollie Mcknight"
-      },
-      {
-        "name": "Huber Sears"
+        "friendId": "5d7a94bdd173281db883d53c",
+        "friendName": "Tillman Holden"
       }
     ]
   }
 ]
-
 
 db.Users.insertMany(users);

@@ -29,7 +29,7 @@ namespace DemoAPI.Models
     { 
       get 
       {
-        return String.Join(' ', this.userFriends.Select(x => x.friendName).ToList());
+        return String.Join(',', this.userFriends.Select(x => x.friendName).ToList());
       }
 
       set 
